@@ -1,0 +1,49 @@
+#cadastro{
+	padding-top: 100px;
+	margin: auto;
+	width: 80%;
+	border-radius: 10px;
+	margin-bottom: 30px; 
+}
+
+#cadastroConteudo{
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+#cadastroTabela{
+	width: 75%;
+	margin: auto;
+	padding: 30px 5px;
+}
+
+#cadastre{
+	font-size: 2em;
+	color: #FFBF00;
+	font-weight: 800;
+	background-color: #E6E6E6;
+	border-radius: 10px;
+}
+
+.espacamento{
+	padding: 15px;
+}
+
+.informcaoes{
+	font-size: 1.2em;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.cadastroTitulo{
+	font-size: 1.4em;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#btnCadastro{
+	padding: 10px;
+	font-size: 1.4em;
+	background-color: #FFBF00;
+	border-radius: 5px;
+}

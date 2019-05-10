@@ -1,0 +1,44 @@
+#main{
+	padding-top: 600px;
+	margin: auto;
+}
+
+.post{
+	background-color: #FAFAFA;
+	border-radius: 10px; 
+	width: 80%;
+	margin: auto;
+}
+
+.titulo{
+	padding: 10px;
+	font-size: 1.5em;
+	background-color: #E6E6E6;
+	margin: 2px 10px;
+	border-radius: 10px;
+}
+
+.descricao{
+	padding: 2%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.imagem{
+	margin: 20px 20px;
+	width: 600px;
+	border: solid #FFBF00 2px;
+	height: 400px;
+	float: right;
+	background-color: #FFBF00;
+}
+
+.resumo{
+	margin: 20px;
+	width: 800px;
+	height: 400px;
+}
+
+.data{
+	margin-left: 20px;
+}
