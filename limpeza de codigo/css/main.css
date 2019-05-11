@@ -1,0 +1,16 @@
+#main{
+	background-color: #FAFAFA;
+	width: 100%;
+	padding: 20px 0px;
+	margin-bottom: 60px;
+	border-top: solid 10px #BDBDBD;
+	border-bottom: solid 10px #BDBDBD;
+}
+
+.espacamento{
+	padding-top: 600px;
+}
+
+.espaco{
+	padding-top: 200px;
+}
