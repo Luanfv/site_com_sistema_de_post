@@ -1,24 +1,64 @@
-<?php 
-	session_start();
-	include('funcoes.php');
+<div class="espacamento">
+		
+</div>
 
-	if($_REQUEST['pesquisa'] != ' ' && $_REQUEST['pesquisa'] != null){
+<main id="main">
 
-		$pesquisa = $_REQUEST['pesquisa'];
-		$banco = conexao();
-		$query = "
+	<?php
+		$lista = retorna_pesquisa();
+	
+		for($i = count($lista) - 1; $i >= 0;$i--){
+	?>
 
-			SELECT * FROM posts
-			WHERE posts.titulo like '%".$pesquisa."%'
+	<table class="post">
+		<tr>
+			<td colspan="2" class="postTitulo">
+				<h1>
+					<a href="noticia.php?postagem=<?php echo $lista[$i]['cdpost'] ?>"><?php echo $lista[$i]['titulo']; ?></a>
+				</h1>
+			</td>
+		</tr>
 
-		";
+		<tr>
+			<td colspan="2" class="postData">
+				<?php
 
-		$info = $banco->query($query);
-		$lista = $info->fetchAll();
+					echo 'Data: ' . $lista[$i]['data'];
 
-		menu();
-		include('mostrar_pesquisa.php');
-		rodape();
-	}
+				?>
+			</td>
+		</tr>
 
-?>
+		<tr>
+			<td class="postResumo">
+				<h2>Resumo</h2>
+				<p>
+					<?php
+
+						echo $lista[$i]['resumo'];
+
+					?>
+				</p>
+			</td>
+
+			<td class="postImagem">
+
+				<img class="postImg" src="fotos/<?php 
+							
+					echo $lista[$i]['imagem']; 
+
+				?>">
+
+			</td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<div class="pequenoEspaco">
+		
+	</div>
+
+	<?php } ?>
+
+</main>

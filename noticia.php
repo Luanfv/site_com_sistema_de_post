@@ -1,77 +1,32 @@
+<?php
+
+	session_start();
+	include ('funcoes.php'); 
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/principal.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/posts.css">
+	<link rel="stylesheet" type="text/css" href="css/rodape.css">
 	<title>
-		
+		Post
 	</title>
 </head>
+<body>
 
 	<?php
-		menu();
 
-	?>main-noticia
+		include('menu.php');
+		include('verifica_noticia.php');
+		include('rodape.php');
 
-	<div id="main-noticia">
-		<div class="post">
-				<div class="titulo">
-					<?php
+	?>
 
-						echo $lista[0]['titulo'];
-
-					?>
-				</div>
-
-				<div class="data">
-					
-					<?php
-
-						echo 'Data: ' . $lista[0]['data'];
-
-					?>
-
-				</div>
-
-				<div class="imagem-resumo">
-
-					<img class="imagem" src="fotos/<?php 
-							
-								echo $lista[0]['imagem']; 
-
-							?>">
-
-					<div class="resumo">
-						<h2>
-							Resumo
-						</h2>
-
-						<?php
-
-							echo $lista[0]['resumo'];
-
-						?>
-
-					</div>
-
-					<div class="descricao">
-						<h2>
-							Texto
-						</h2>
-
-						<?php
-
-							echo $lista[0]['texto'];
-
-						?>
-					</div>
-
-			</div>
-		</div>
-		<?php 
-
-		rodape();
-
-		?>
-
-	</body>
+</body>
 </html>

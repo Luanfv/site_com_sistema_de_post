@@ -1,9 +1,10 @@
 #menu{
+	background-color: #F2F2F2;
 	width: 100%;
-	height: 50px;
-	background-color: #FFFFFF;
+	height: 60px;
+	font-size: 1.2em;
 	position: fixed;
-	margin-top: -50px;
+	border-bottom: solid 3px black;
 }
 
 #menu a{
@@ -12,41 +13,33 @@
 }
 
 #menu a:hover{
-	border-top: #FFBF00 solid 3px;
-}
-
-#inputs{
-	margin-left: 15px;
-}
-
-#pesquisar{
-	width: 400px;
-	display: inline;
-}
-
-#pesquisa{
-	margin-left: 15px;
-	border-radius: 5px;
-	display: inline;
-	padding: 8px;
-	font-size: 14px;
-	width: 250px;
-	background: #F2F2F2;
-}
-
-#botaoPesquisa{
-	margin-top: 5px;
-	border-radius: 5px;
-	display: inline;
-	padding: 8px;
-	background-color: #FFBF00;
-	background-repeat: no-repeat;
-	font-weight: 550;
+	border-bottom: 4px black solid;
 }
 
 .navegacao{
 	float: right;
-	padding: 10px;
-	margin-right: 10px;
-	font-weight: 600;
+	padding: 2px 10px;
+	padding-top: 15px;
+	margin-right: 20px;
+}
+
+#pesquisa{
+	float: left;
+	width: 500px;
+	display: inline;
+	margin-top: 8px;
+	margin-left: 20px;
+}
+
+#txtPesquisa{
+	border-radius: 2px;
+	padding: 5px;
+	font-size: 1em;
+}
+
+#btnPesquisa{
+	border-radius: 2px;
+	padding: 5px;
+	font-size: 1em;
+	background-color: #FFBF00;
 }

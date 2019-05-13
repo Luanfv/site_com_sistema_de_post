@@ -17,7 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/rodape.css">
 
 	<title>
-		
+		Postagens
 	</title>
 </head>
 <body>

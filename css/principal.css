@@ -5,8 +5,7 @@
 }
 
 body{
-	background-image: url('img/fundo.jpg');
+	background: url('img/fundo.jpg') fixed;
 	background-size: 100%;
-	background-repeat: no-repeat;
 	background-attachment: fixed;
 }

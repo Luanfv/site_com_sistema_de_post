@@ -1,8 +1,10 @@
 <?php 
 	session_start();
+	include('funcoes.php');
+
+	verifica_login();
 
 	$_SESSION['erro_cadastro'] = null;
-	include('funcoes.php');
 
 
 	if($_SESSION['logado'] != 'sim')
@@ -31,10 +33,9 @@
 		header('location: home.php');
 	}
 	else{
-		header('location: index.php?erro=sim');
+		header('location: cadastrar.php?erro=sim');
 	}
 
 	
 	
 ?>
-

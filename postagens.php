@@ -1,19 +1,64 @@
-<!DOCTYPE html>
-		<html>
-		<head>
-			<meta charset="utf-8">
-			<link rel="stylesheet" type="text/css" href="css/posts.css">
-			<title>
-				POSTS
-			</title>
-		</head>
+<div class="espacamento">
+		
+</div>
 
-<?php
-	session_start();
-	include('funcoes.php');
+<main id="main">
 
-	menu();
-	mostrar_posts();
-	rodape();
+	<?php
+		$lista = retornar_post();
+	
+		for($i = count($lista) - 1; $i >= 0;$i--){
+	?>
 
-?>
+	<table class="post">
+		<tr>
+			<td colspan="2" class="postTitulo">
+				<h1>
+					<a href="noticia.php?postagem=<?php echo $lista[$i]['cdpost'] ?>"><?php echo $lista[$i]['titulo']; ?></a>
+				</h1>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2" class="postData">
+				<?php
+
+					echo 'Data: ' . $lista[$i]['data'];
+
+				?>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="postResumo">
+				<h2>Resumo</h2>
+				<p>
+					<?php
+
+						echo $lista[$i]['resumo'];
+
+					?>
+				</p>
+			</td>
+
+			<td class="postImagem">
+
+				<img class="postImg" src="fotos/<?php 
+							
+					echo $lista[$i]['imagem']; 
+
+				?>">
+
+			</td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<div class="pequenoEspaco">
+		
+	</div>
+
+	<?php } ?>
+
+</main>

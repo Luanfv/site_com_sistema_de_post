@@ -1,234 +1,63 @@
-*{
-	margin: 0px;
-	padding: 0px;
-}
-
-body{
-	background: url("img/fundo.jpg") fixed;
-	background-size: 100%;
-	background-attachment: fixed;
-	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-}
-
 a{
-	color: black;
-	text-decoration: none;
-}
-
-textarea{
-	resize: none;
-}
-
-h2{
-	padding: 5px;
-	margin: 5px
-}
-
-/* MENU */
-
-#menu{
-	width: 100%;
-	height: 50px;
-	background-color: #FFFFFF;
-	position: fixed;
-}
-
-#menu a{
 	text-decoration: none;
 	color: black;
 }
 
-#menu a:hover{
-	border-top: #FFBF00 solid 3px;
-}
-
-#inputs{
-	margin-left: 15px;
-}
-
-#pesquisar{
-	width: 400px;
-	display: inline;
-}
-
-#pesquisa{
-	margin-left: 15px;
-	border-radius: 5px;
-	display: inline;
-	padding: 8px;
-	font-size: 14px;
-	width: 250px;
-	background: #F2F2F2;
-}
-
-#botaoPesquisa{
-	margin-top: 5px;
-	border-radius: 5px;
-	display: inline;
-	padding: 8px;
-	background-color: #FFBF00;
-	background-repeat: no-repeat;
-	font-weight: 550;
-}
-
-.navegacao{
-	float: right;
-	padding: 10px;
-	margin-right: 10px;
-	font-weight: 600;
-}
-
-/* FIM MENU */
-
-
-/* MAIN */
-
-#main{
-	padding-top: 600px;
-	margin: auto;
-}
-
-#main a:hover{
+a:hover{
 	text-decoration: underline;
 }
 
-#main-noticia{
-	padding-top: 120px;
-	margin: auto;
-}
-
 .post{
-	background-color: #FAFAFA;
-	border-radius: 10px; 
-	width: 80%;
-	margin: auto;
-}
-
-.titulo{
-	padding: 10px;
-	font-size: 1.8em;
-	background-color: #E6E6E6;
-	margin: 2px 10px;
-	border-radius: 10px;
-	font-weight: 600;
-}
-
-.descricao{
-	padding: 2%;
-	margin: auto;
-	margin-bottom: 30px;
-}
-
-.imagem-resumo{
-	border: white solid 0.1px;
-	margin-bottom: 50px;
-	border-radius: 10px;
-}
-
-.imagem{
-	margin: 20px 20px;
-	width: 600px;
-	border: solid #FFBF00 2px;
-	height: 400px;
-	float: right;
-	background-color: #FFBF00;
-	
-}
-
-.resumo{
-	margin: 20px;
-	width: 800px;
-	height: 400px;
-}
-
-.data{
-	margin-left: 20px;
-}
-
-/* FIM MAIN */
-
-/* RODAPE */
-
-#rodape{
+	padding: 20px;
+	margin-bottom: 25px;
 	width: 100%;
-	height: 75px;
-	background-color: #FFFFFF;
-	padding-top: 25px;
-	margin-top: 75px;
-	color: #6E6E6E;
 }
 
-#rodape a{
-	color: #6E6E6E;
-	text-decoration: none;
+.postTitulo{
+	font-size: 1.5em;
+	width: 100%;
 }
 
-#rodape a:hover{
-	color: black;
+.postData{
+	font-size: 0.8em;
+}
+
+.postResumo{
 	font-size: 1.2em;
+	width: 98%;
+	height: 500px;
+	float: left;
 }
 
-#msgRodape{
-	margin: auto;
-	width: 30%;
+.postImagem{
+	width: 55%;
+	height: 500px;
 }
 
-.conteudoRodape{
-	text-align: center;
+.postImg{
+	width: 100%;
+	height: 100%;
 }
 
-/* FIM RODAPE */
-
-/* CADASTRO */
-
-#cadastro{
-	padding-top: 100px;
-	margin: auto;
-	width: 80%;
-	border-radius: 10px;
-	margin-bottom: 30px; 
-}
-
-#cadastroConteudo{
-	background-color: #FFFFFF;
-	border-radius: 10px;
-}
-
-#cadastroTabela{
-	width: 75%;
-	margin: auto;
-	padding: 30px 5px;
-}
-
-#cadastre{
-	font-size: 2em;
-	color: #FFBF00;
-	font-weight: 800;
-	background-color: #E6E6E6;
-	border-radius: 10px;
-}
-
-.espacamento{
-	padding: 15px;
-}
-
-.informcaoes{
+.postTexto{
 	font-size: 1.2em;
+	width: 00%;
+	margin: auto;
+}
+
+.espacamentoPost{
+	padding-top: 200px;
+}
+
+.pequenoEspaco{
+	margin-bottom: 25px;
+	background-color: red;
+}
+
+.delete-edite{
+	float: right;
 	padding: 5px;
-	border-radius: 5px;
+	margin-right: 5px;
+	background: #FFBF00;
+	border: black 2px solid;
 }
-
-.cadastroTitulo{
-	font-size: 1.4em;
-	padding: 5px;
-	border-radius: 5px;
-}
-
-#btnCadastro{
-	padding: 10px;
-	font-size: 1.4em;
-	background-color: #FFBF00;
-	border-radius: 5px;
-}
-
-/* FIM CADASTRO */

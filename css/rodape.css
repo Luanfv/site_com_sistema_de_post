@@ -1,27 +1,24 @@
 #rodape{
+	margin-top: 100px;
 	width: 100%;
 	height: 75px;
-	background-color: #FFFFFF;
-	padding-top: 25px;
-	margin-top: 75px;
+	background-color: #FAFAFA;
 	color: #6E6E6E;
 }
 
 #rodape a{
-	color: #6E6E6E;
 	text-decoration: none;
+	color: #6E6E6E;
 }
 
 #rodape a:hover{
+	font-size: 1.1em;
 	color: black;
-	font-size: 1.2em;
 }
 
-#msgRodape{
-	margin: auto;
-	width: 30%;
-}
-
-.conteudoRodape{
+#alinhamentoRodape{
+	width: 500px;
 	text-align: center;
+	margin: auto;
+	padding-top: 15px;
 }

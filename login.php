@@ -2,7 +2,7 @@
 	session_start();
 
 	if(isset($_SESSION['logado']) && $_SESSION['logado'] == 'sim')
-		header('location: index.php');
+		header('location: cadastrar.php');
 
 ?>
 
@@ -22,7 +22,7 @@
 
 		<div>
 
-			<form action="verifica_login.php" method="post">
+			<form action="verifica_conta.php" method="POST">
 				<table id="tabela">
 
 					<tr>

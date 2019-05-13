@@ -1,8 +1,10 @@
 #main{
 	background-color: #FAFAFA;
-	width: 100%;
+	width: 95%;
+	margin: auto;
 	padding: 20px 0px;
 	margin-bottom: 60px;
+	border-radius: 10px;
 	border-top: solid 10px #BDBDBD;
 	border-bottom: solid 10px #BDBDBD;
 }

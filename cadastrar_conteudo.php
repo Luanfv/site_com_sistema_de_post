@@ -18,9 +18,19 @@
 
 				<tr>
 					<td class="espacamento">
-									
+						<div id="erro">
+							<?php
+
+								if(isset($_REQUEST['erro']) && $_REQUEST['erro'] == 'sim'){
+									echo "Todos os campos devem ser preenchidos";
+								}
+
+							?>	
+						</div>
 					</td>
 				</tr>
+
+				
 
 				<tr>
 					<td class="cadastroTitulo">

@@ -2,25 +2,16 @@
 
 	<div id="cadastroConteudo">
 
-					<form action="post.php" method="post" enctype="multipart/form-data">
+					<form action="editar.php" method="post" enctype="multipart/form-data">
 						<table id="cadastroTabela">
 
 							<tr>
 								<th id="cadastre">
 								
-									CADASTRE UM POST
+									EDITE O POST
 								
 								</th>
 
-							</tr>
-
-							<tr>
-								<th>
-									<?php 
-										if(isset($_REQUEST['erro']) && $_REQUEST['erro'] = 'sim')
-											echo "Todos os campos devem ser preenchidos";
-									?>
-								</th>
 							</tr>
 
 							<tr>
@@ -37,7 +28,7 @@
 
 							<tr>
 								<td>
-									<input class="informcaoes" type="text" name="titulo">
+									<input class="informcaoes" type="text" name="titulo" value="<?php echo $lista[0]['titulo']; ?>">
 								</td>
 							</tr>
 
@@ -55,7 +46,7 @@
 
 							<tr>
 								<td>
-									<textarea class="informcaoes" cols="60" rows="5" name="resumo"></textarea>
+									<textarea class="informcaoes" cols="60" rows="5" name="resumo"><?php echo $lista[0]['resumo']; ?></textarea>
 								</td>
 							</tr>
 
@@ -73,7 +64,7 @@
 
 							<tr>
 								<td>
-									<textarea class="informcaoes" cols="60" rows="20" name="descricao"></textarea>
+									<textarea class="informcaoes" cols="60" rows="20" name="descricao"><?php echo $lista[0]['texto'];  ?></textarea>
 								</td>
 							</tr>
 
@@ -119,11 +110,13 @@
 
 							<tr>
 								<td>
-									<input id="btnCadastro" type="submit" value="Publicar">
+									<input id="btnCadastro" type="submit" value="Editar">
 								</td>
 							</tr>
 
 						</table>
 					</form>
-				</div>
-			</div>
+
+	</div>
+</div>
+

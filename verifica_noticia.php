@@ -1,6 +1,4 @@
 <?php
-	session_start();
-	include('funcoes.php');
 
 	if(isset($_REQUEST['postagem'])){
 		$banco = conexao();
@@ -13,6 +11,6 @@
 		$info = $banco->query($query);
 		$lista = $info->fetchAll();
 
-		include('noticia.php');
+		include('noticia_conteudo.php');
 	}
 ?>

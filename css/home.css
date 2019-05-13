@@ -1,163 +1,69 @@
-*{
-	margin: 0px;
-	padding: 0px;
-}
-
-body{
-	background: url("img/fundo.jpg") fixed;
-	background-size: 100%;
-	background-attachment: fixed;
-	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-}
-
-h1{
-	text-align: center;
-}
-
-/*
-	MENU
-*/
-
-#menu{
-	width: 100%;
-	height: 50px;
-	background-color: #FFFFFF;
-	position: fixed;
-}
-
-#menu a{
-	text-decoration: none;
-	color: black;
-}
-
-#menu a:hover{
-	border-top: #FFBF00 solid 3px;
-}
-
-#inputs{
-	margin-left: 15px;
-}
-
-#pesquisar{
-	width: 400px;
-	display: inline;
-}
-
-#pesquisa{
-	margin-left: 15px;
-	border-radius: 5px;
-	display: inline;
-	padding: 8px;
-	font-size: 14px;
-	width: 250px;
-	background: #F2F2F2;
-}
-
-#botaoPesquisa{
-	margin-top: 5px;
-	border-radius: 5px;
-	display: inline;
-	padding: 8px;
-	background-color: #FFBF00;
-	background-repeat: no-repeat;
-	font-weight: 550;
-}
-
-.navegacao{
-	float: right;
-	padding: 10px;
-	margin-right: 10px;
-	font-weight: 600;
-}
-
-/*
-	FIM MENU
-*/
-
-/*
-	MAIN
-*/
-
-#ultimos_posts{
-	width: 80%;
+#postsRecentes{
+	padding-top: 400px;
 	margin: auto;
-	padding-top: 100px;
-	margin-top: 50px;
-}
-
-.recentes{
-	background-color: #FAFAFA;
-	border-radius: 10px;
-	margin-left: 2.5%;
-	margin-bottom: 10px;
-	width: 600px;
-	height: 500px;
-	float: left;
-}
-
-.titulo{
-	border-radius: 10px;
-	font-size: 1.5em;
-	background-color: #E6E6E6;
 	width: 95%;
-	height: 20px;
-	padding: 15px;
-}
-
-.imagem{
 	border-radius: 10px;
-	margin-top: 1.5%;
-	margin-left: 1.5%;
-	width: 580px;
-	height: 400px;
-}
-
-#sobre{
-	margin: auto;
-	margin-top: 50px;
-	background-color: #FAFAFA;
-	border-radius: 10px; 
-	width: 85%;
-	margin-left: 11.3%;
-	float: left;
-	clear: left;
-	width: 75%;
 	margin-bottom: 100px;
 }
 
-.sobre_conteudo{
-	padding: 15px;
-}
-
-/*
-	FIM MAIN
-*/
-
-#rodape{
-	width: 100%;
-	height: 75px;
-	background-color: #FFFFFF;
-	padding-top: 25px;
-	margin-top: 75px;
-	color: #6E6E6E;
-		clear: left;
-}
-
-#rodape a{
-	color: #6E6E6E;
+#postsRecentes a{
+	color: black;
 	text-decoration: none;
 }
 
-#rodape a:hover{
-	color: black;
-	font-size: 1.2em;
+#postsRecentes a:hover{
+	text-decoration: underline;
 }
 
-#msgRodape{
+.txtRecentes{
+	font-size: 2em;
+	padding: 5px;
+	background-color: #D8D8D8;
+	border-radius: 10px;
+	padding-left: 15px;
+}
+
+.imgRecentes{
+	width: 600px;
+	height: 400px;
+	padding: 5px;
+	background-color: #FAFAFA;
+	border-radius: 10px;
+}
+
+#mainRecentes{
+	margin-top: 100px;
+	padding-top: 40px;
+	width: 95%;
+	background-color: #FAFAFA;
+	border-radius: 10px;
 	margin: auto;
-	width: 30%;
 }
 
-.conteudoRodape{
+#tituloRecentes{
 	text-align: center;
+	padding: 10px;
+	width: 98.5%;
+	background-color: #D8D8D8;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	color: black;
+	font-weight: 600;
+}
+
+#sobreRecentes{
+	text-align: center;
+	padding: 10px;
+	width: 98.5%;
+	background-color: #D8D8D8;
+}
+
+#txtSobreRecentes{
+	padding: 20px 75px;
+	border-radius: 10px;
+}
+
+.edicao{
+	color: #04B404;
+	background-color: #A9F5A9;
 }

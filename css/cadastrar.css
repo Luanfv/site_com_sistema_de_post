@@ -2,6 +2,13 @@ textarea{
 	resize: none;
 }
 
+#erro{
+	color: red;
+	background-color: #F5A9A9;
+	font-weight: 600;
+	text-align: center;
+}
+
 #cadastro{
 	padding-top: 100px;
 	margin: auto;
